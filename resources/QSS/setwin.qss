@@ -1,0 +1,62 @@
+QLineEdit {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #4fa08b;
+	background-color: #222b2e;
+	color: #d3dae3;
+}
+
+/*定义QSS右侧的距离*/
+QComboBox
+{
+	padding:1px 18px 1px 7px;
+}
+
+/*定义Item视图*/
+QComboBox QAbstractItemView
+{
+	border:2px solid darkgray;
+	selection-background-color: lightgray;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+/* 定义Item的高度*/
+QComboBox QAbstractItemView::item
+{
+	height: 25px;
+}
+/*定义Item被选择的状态*/
+QComboBox QAbstractItemView::item:selected
+{
+	background-color: lightgray;color:red;
+}
+QComboBox QAbstractItemView::item:hover
+{
+	background:skyblue;
+}
+
+/* 下拉的箭头标识符 */
+QComboBox::drop-down 
+{
+	subcontrol-origin: padding;
+	subcontrol-position: top right;
+	width: 30px;
+	border-left-width: 0px;
+	border-left-color: gray;
+	border-left-style: solid;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+/* 正常的时候 */
+QComboBox::down-arrow
+{
+	image: url(:/icon/arrow_down.png);
+	top:1px;
+	left:-2px;
+	width: 100px;
+	height:18px;
+}
+
+
+

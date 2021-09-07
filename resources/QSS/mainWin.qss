@@ -1,0 +1,80 @@
+/**********按钮**********/
+QPushButton{
+        border-radius: 4px;
+        border: none;
+        width: 75px;
+        height: 25px;
+}
+QPushButton:enabled {
+        background: rgb(120, 170, 220);
+        color: white;
+}
+QPushButton:!enabled {
+        background: rgb(180, 180, 180);
+        color: white;
+}
+QPushButton:enabled:hover{
+        background: rgb(100, 160, 220);
+}
+QPushButton:enabled:pressed{
+        background: rgb(0, 78, 161);
+}
+
+/**********标签样式**********/
+QLabel
+{
+	background:transparent;
+	border-style:none   
+}
+
+/**********输入框**********/
+QLineEdit 
+{
+	background:transparent;
+	border-style:none
+}
+
+/**********下拉窗口栏**********/
+QTableView::item, QListView::item, QTreeView::item
+{
+	min-width: 50px;
+	min-height: 50px;
+	color:#000000;
+	margin-right:1px;
+	border: 1px solid #D9D9D9;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+}
+
+QTableView::item:selected, QListView::item:selected, QTreeView::item:selected 
+{
+    color:red;
+    background: #d8dfe2;
+       
+}
+
+QTableView::item:hover, QListView::item:hover, QTreeView::item:hover 
+{
+    color:red;
+    background: #d8dfe2;
+}
+
+QListWidget::item:selected:!active
+{
+    color:red;
+    background: #d8dfe2;
+}
+QScrollBar
+{
+    width:0;
+    height:0
+}
+
+QLabel#photoLab
+{
+        background:transparent;
+        border-style:none;
+        color:red;
+        font-size:20px;
+}

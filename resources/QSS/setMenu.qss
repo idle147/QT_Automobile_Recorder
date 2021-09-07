@@ -1,0 +1,51 @@
+/**********下拉窗口栏**********/
+QListView
+{
+    border: none;//最外层无边框
+}
+QTableView::item, QListView::item, QTreeView::item
+{
+	color:#000000;
+	margin-right:1px;
+	border: 1px solid #D9D9D9;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+}
+QListView::item:alternate 
+{
+	background:#EEEEEE;
+}
+QTableView::item:selected, QListView::item:selected, QTreeView::item:selected 
+{
+    color:red;
+    background: #d8dfe2;
+    border: 1px solid black;
+}
+
+QTableView::item:hover, QListView::item:hover, QTreeView::item:hover 
+{
+    color:red;
+    background: #d8dfe2;
+    border: 1px solid black;
+}
+
+QListWidget::item:selected:!active
+{
+    color:red;
+    background: #d8dfe2;
+    border: 1px solid black;
+}
+QScrollBar
+{
+    width:0;
+    height:0
+}
+
+QLabel#photoLab
+{
+        background:transparent;
+        border-style:none;
+        color:red;
+        font-size:20px;
+}

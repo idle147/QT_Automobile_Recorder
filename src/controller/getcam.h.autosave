@@ -1,0 +1,51 @@
+#ifndef IDIRECTSHOWAPI_H
+#define IDIRECTSHOWAPI_H
+
+#include <QList>
+#include <QObject>
+#include <QVariant>
+#include <windows.h>
+#include <dshow.h>
+
+typedef struct ParameterData{
+    QVariant min;
+    QVariant max;
+    QVariant def;
+    QVariant cur;
+    ParameterData()
+    {
+        this->min = 0.0;
+        this->max = 0.0;
+        this->def = 0.0;
+        this->cur = 0.0;
+    }
+}s_ParameterData;
+
+typedef struct CameraParameterData{
+    ParameterData contrast;
+    ParameterData saturation;
+    ParameterData brightness;
+}s_CameraParameterData;
+
+class CDirectShowApi
+{
+public:
+    CDirectShowApi();
+
+    // DirectShow 获取指定摄像头参数值
+    static bool dxCameraParameter(const int& index, CameraParameterData&);
+
+    // DirectShow 获取指定摄像头支持分辨率
+    static bool dxCameraSupportResolution(const int& index, QList<QSizeF>&);
+
+    // DirectShow 获取摄像头设备
+    static bool dxCameraDevices(QStringList&);
+
+    // DirectShow 获取麦克风设备
+    static bool dxMicrophoneDevices(QStringList&);
+
+private:
+    static bool BindFilter(int nCameraIndex, IBaseFilter **pFilter);
+};
+
+#endif // IDIRECTSHOWAPI_H

@@ -1,0 +1,23 @@
+.QLabel[page=\"true\"]
+{ 
+    padding: 1px; 
+}
+
+.QLabel[currentPage=\"true\"]
+{ 
+    color: rgb(190, 0, 0);
+}
+
+.QLabel[page=\"true\"]:hover
+{ 
+    color: white; 
+    border-radius: 4px; 
+    background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(53, 121, 238, 255), stop:1 rgba(0, 202, 237, 255));
+}
+
+QLineEdit 
+{
+    background:transparent;
+    font-size:14px;
+
+}
