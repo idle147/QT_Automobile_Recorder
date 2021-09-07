@@ -16,4 +16,13 @@
 
 ### 项目流程图
 
+![image](https://user-images.githubusercontent.com/56959230/132313881-a5ad9087-631d-435b-88cb-1d0e4a61ed31.png)
+
+### 系统MVC架构————输入
+
+![image](https://user-images.githubusercontent.com/56959230/132314017-a50a574b-f495-4b2f-a9b0-0d59414ffef0.png)
+
+### 系统MVC架构————反馈
+
+![image](https://user-images.githubusercontent.com/56959230/132314105-73cd5e5a-195d-4142-9531-694dea5c3107.png)
 
